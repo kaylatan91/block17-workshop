@@ -11,14 +11,14 @@ const underFive = (item) => {
     return item.price <= 5;
 }
 const drinksUnderFive = coffeeMenu.filter(underFive);
-console.log(drinksUnderFive);
+console.table(drinksUnderFive);
 
 //Promp 4: Print an array of drinks that are priced at an even number
 const evenNum = (item) => {
     return item.price % 2 === 0;
 }
 const drinksEvenNum = coffeeMenu.filter(evenNum);
-console.log(drinksEvenNum);
+console.table(drinksEvenNum);
 
 //Prompt 5: Print the total if you were to order one of every drink
 
@@ -41,7 +41,7 @@ const findSeasonalDrinks = (item) => {
     return item.seasonal === true;
 }
 const seasonalDrinks = coffeeMenu.filter(findSeasonalDrinks);
-console.log(seasonalDrinks);
+console.table(seasonalDrinks);
 
 //Prompt 7: Print all the seasonal drinks with the words "with imported beans" after the item name. For ex: "affogato with imported beans"
 
